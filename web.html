@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purna web developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css">
+    <link rel="icon" href="images/about.jpg">
+    <style>
+        /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    background-color: rgb(206, 213, 211);
+}
+.hero {
+            height: 100vh;
+            width: 100%;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://www.simplilearn.com/ice9/free_resources_article_thumb/is_web_development_good_career.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 800px;
+            padding: 0 20px;
+        }
+        .hero-content p{
+            color: white;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 15px rgba(110, 142, 251, 0.4);
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 7px 20px rgba(110, 142, 251, 0.6);
+        }
+
+        .social-icons {
+            margin-top: 3rem;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 1.3rem;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+
+        .social-icons a:hover {
+            background: #fff;
+            color: #6e8efb;
+            transform: translateY(-5px);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+            
+            .social-icons a {
+                width: 45px;
+                height: 45px;
+                margin: 0 8px;
+            }
+        }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.headingsd h1{
+    text-align: center;
+    font-size: 2.5em;
+    background-color: #f4f4f4;
+    padding: 3rem;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.slide {
+    padding: 50px;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Header Image */
+.header-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Card Styling */
+.card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+    border-top: 2px solid #007BFF;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content p {
+    margin: 10px 0;
+    font-size: 1em;
+    color: #fff;
+}
+
+.social-links {
+    margin: 15px 0;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #007BFF;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .slide {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to My Web Development</h1>
+            <p class="hero-subtitle">Creating beautiful, responsive and user-friendly websites with modern technologies and innovative design concepts</p>
+            <a href="#" class="cta-button">Design & Development</a>
+            <div class="social-icons">
+                <a target="_blank" href="https://github.com/purnakhatriofficial"><i class="fab fa-github"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/purna-bahadur-khatri-b6982a320/"><i class="fab fa-linkedin-in"></i></a>
+                <a target="_blank" href="https://www.facebook.com/Purnakhatri630"><i class="fab fa-facebook"></i></a>
+                <a target="_blank" href="https://www.instagram.com/purn.akhatri/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <!-- Slide 1: Header Image -->
+        <section class="slide">
+            <div class="header-image">
+                <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/is_web_development_good_career.jpg" alt="Web Development Header">
+            </div>
+            <h1>The Art of Web Development</h1>
+            <p>Welcome to the art of web development! Let’s explore the process of creating digital experiences. We’ll cover the tools, languages, and best practices involved.</p>
+            <ul>
+                <li>by purna khatri</li>
+                <li>Made Purna Bahadur Khatri</li>
+            </ul>
+        </section>
+
+        <!-- Slide 2: Understanding Web Development -->
+        <section class="slide">
+            <h1>Understanding Web Development</h1>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://walkingtree.tech/wp-content/uploads/2022/03/prolect-scope3-scaled-1.jpg" alt="Definition and Scope">
+                    </div>
+                    <h2>Definition and Scope</h2>
+                    <p>Web development encompasses creating websites and web applications. It ranges from single static pages to complex apps.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://i.ytimg.com/vi/RsKJ0fF-xhc/maxresdefault.jpg" alt="Front-End vs. Back-End">
+                    </div>
+                    <h2>Front-End vs. Back-End</h2>
+                    <p>Front-end focuses on user interface and experience. Back-end handles server, database, and application logic.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190626123927/untitlsssssed.png" alt="Full-Stack Development">
+                    </div>
+                    <h2>Full-Stack Development</h2>
+                    <p>Full-stack developers work on both front-end and back-end components. They have a holistic view of projects.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3: The Evolution of Web Design -->
+        <section class="slide">
+            <h1>The Evolution of Web Design</h1>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU_Ldz1ncGWT9wkV-sMv0iYA737To0znBmUw&s" alt="Static to Dynamic">
+                    </div>
+                    <h2>1 Static to Dynamic</h2>
+                    <p>Web design evolved from static pages to interactive applications. Websites adapt to user inputs now.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7_pa2OR0YxBk3oNkZ2yhQ8L21wprefyqJcg&s" alt="Responsive Design">
+                    </div>
+                    <h2>2 Responsive Design</h2>
+                    <p>Responsive design ensures optimal viewing across multiple devices. Websites adapt to different screen sizes.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://onesignal.com/blog/content/images/2023/04/mobile-first-design-approach.jpg" alt="Mobile-First Approach">
+                    </div>
+                    <h2>3 Mobile-First Approach</h2>
+                    <p>Mobile-first prioritizes mobile user experience. Design starts with mobile and expands to desktop.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 4: Essential Languages and Tools -->
+        <section class="slide">
+            <h1>Essential Languages and Tools</h1>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk_JpzDNncpRyrUl1rFjfUn2bA8F0KWAeaVQ&s" alt="HTML5, CSS3">
+                    </div>
+                    <h2>HTML5, CSS3</h2>
+                    <p>HTML provides structure, while CSS handles styling. They are the backbone of web design.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRss-86vRuxOArrVRmMgerLZ5pi8yCs6U7zsQ&s" alt="JavaScript">
+                    </div>
+                    <h2>JavaScript</h2>
+                    <p>JavaScript enables interactivity and dynamic content. It enhances user engagement.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://ik.imagekit.io/yhmzg9hf6/git-blog-header.png?updatedAt=1724738368191" alt="Git">
+                    </div>
+                    <h2>Git</h2>
+                    <p>Git manages code changes and collaboration. Version control is vital for team projects.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: The Power of User Experience (UX) -->
+        <section class="slide">
+            <h1>The Power of User Experience (UX)</h1>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpO_2EiWkrCiX0Hld3tMCKjQtO9o2ZbfG6lg&s" alt="Intuitive Design">
+                    </div>
+                    <h2>Intuitive Design</h2>
+                    <p>Intuitive design makes navigation seamless and efficient. Users find what they need quickly.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0KesfUXbnLEhlJGGw-ubvnsU6IUGQ2QHplw&s" alt="User-Centered">
+                    </div>
+                    <h2>User-Centered</h2>
+                    <p>User-centered development focuses on user needs. Feedback guides design and functionality.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlV30Ukj0fnrxgezIwP7-bXyeGvbujEFusAw&s" alt="Accessibility">
+                    </div>
+                    <h2>Accessibility</h2>
+                    <p>Accessibility ensures inclusivity for all users. Websites are usable by people with disabilities.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: Bringing Designs to Life -->
+        <section class="slide">
+            <h1>Bringing Designs to Life</h1>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://balsamiq.com/assets/learn/articles/wireframe-example-plain.png" alt="Wireframes">
+                    </div>
+                    <h2>Wireframes</h2>
+                    <p>Wireframes create basic structure and layout. They’re blueprints of the user interface.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://public-images.interaction-design.org/tags/td-prototyping-02.jpg" alt="Prototypes">
+                    </div>
+                    <h2>Prototypes</h2>
+                    <p>Prototypes simulate user interaction and flow. They test design assumptions.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://saigontechnology.com/wp-content/uploads/animation-in-css9.webp" alt="Animations">
+                    </div>
+                    <h2>Animations</h2>
+                    <p>CSS animations add visual flair and feedback. They enhance user engagement.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://media.licdn.com/dms/image/v2/D4E12AQFfe1nZbaWdMw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1698604163003?e=2147483647&v=beta&t=zrcrB8lfoVmZo0LcSLgut3A_4PwE6YFe9EK3iy17L2Y" alt="JavaScript">
+                    </div>
+                    <h2>JavaScript</h2>
+                    <p>JavaScript creates interactive elements. It brings dynamic behavior to life.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 7: Backend Technologies -->
+        <section class="slide">
+            <h1>Backend Technologies</h1>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://i0.wp.com/css-tricks.com/wp-content/csstricks-uploads/serversideresults.jpg?resize=570%2C300" alt="Server-Side Languages">
+                    </div>
+                    <h2>Server-Side Languages</h2>
+                    <p>Languages like Python, Ruby, and PHP handle server logic.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://www.geekboots.com/_next/image?url=https%3A%2F%2Fcdn.geekboots.com%2Fgeek%2Fbest-language-and-framework-to-create-rest-api-hero-1661533395197.webp&w=3840&q=75" alt="Databases and APIs">
+                    </div>
+                    <h2>Databases and APIs</h2>
+                    <p>Databases store and retrieve data, APIs facilitate communication.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuxZNvPo72hN6qCSfXYJAwmdbjXlHy3EN6SA&s" alt="Cloud Hosting">
+                    </div>
+                    <h2>Cloud Hosting</h2>
+                    <p>Cloud services host and deploy web applications.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 8: Web Security Best Practices -->
+        <section class="slide">
+            <h1>Web Security Best Practices</h1>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://cf-assets.www.cloudflare.com/zkvhlag99gkb/yIdz5RpTrxbEGUmwkKoNV/d1891ad82a6d59ad38428f6821520f62/how-to-make-your-site-https-only.png" alt="HTTPS">
+                    </div>
+                    <h2>HTTPS</h2>
+                    <p>HTTPS encrypts data transmission. It secures communication.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://www.clickssl.net/wp-content/uploads/2023/02/how-does-encryption-works.jpg" alt="Encryption">
+                    </div>
+                    <h2>Encryption</h2>
+                    <p>Data encryption protects sensitive information. It secures user data.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://ideas.ted.com/wp-content/uploads/sites/3/2018/02/featured_art_vulnerability_sacha_vega_istock.jpg?w=750" alt="Vulnerability">
+                    </div>
+                    <h2>Vulnerability</h2>
+                    <p>Protection against common vulnerabilities prevents attacks. It secures websites.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 9: The Future of Web Development -->
+        <section class="slide">
+            <h1>The Future of Web Development</h1>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://www.gtechme.com/wp-content/uploads/2023/10/Progressive-Web-Apps-PWAs-for-UAE-Businesses-The-Future-of-Mobile-Web-banner.jpg" alt="PWAs">
+                    </div>
+                    <h2>PWAs</h2>
+                    <p>Progressive Web Apps offer app-like experiences. They enhance user engagement.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6grLVXJ8urLdHBRlAgUfovtkNTQ75URfRQg&s" alt="AI">
+                    </div>
+                    <h2>AI</h2>
+                    <p>AI and machine learning automate tasks. They personalize user experiences.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://tetrate.io/wp-content/uploads/2021/07/webassembly-wasm.jpg" alt="WebAssembly">
+                    </div>
+                    <h2>WebAssembly</h2>
+                    <p>WebAssembly improves performance. It enables complex applications.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB7_4XrWij1bs6dZ7-t7PY0QqvymrHiWCkRw&s" alt="Edge Computing">
+                    </div>
+                    <h2>Edge Computing</h2>
+                    <p>Edge computing brings processing closer to users. It reduces latency.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 10: Crafting Beautiful Digital Experiences -->
+        <section class="slide">
+            <h1>Crafting Beautiful Digital Experiences</h1>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://cdn11.bigcommerce.com/s-c7qlm8a06j/product_images/uploaded_images/18-types-of-aesthetics-guides-and-outfit-ideas.png" alt="Aesthetics">
+                    </div>
+                    <h2>Aesthetics</h2>
+                    <p>Balance aesthetics and functionality. Continuous learning is vital for web developers.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://cdn-icons-png.flaticon.com/512/6008/6008225.png" alt="Functionality">
+                    </div>
+                    <h2>Functionality</h2>
+                    <p>Functionality ensures the website works seamlessly and meets user needs.</p>
+                </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3kIYdsV9t8z7Pol9UhKl-CkEiJwRW4lfTCg&s" alt="Learning">
+                    </div>
+                    <h2>Learning</h2>
+                    <p>There are many resources for aspiring developers to learn and grow.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+<!-- Footer Section -->
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2023 The Art of Web Development. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/Purnakhatri630" target="_blank">Facebook</a>
+            <a href="https://www.linkedin.com/in/purna-bahadur-khatri-b6982a320/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/purnakhatriofficial" target="_blank">GitHub</a>
+        </div>
+        <p>Made with ❤️ by Purna Khatri</p>
+    </div>
+</footer>
+    
+</body>
+</html>
